@@ -24,7 +24,7 @@ DOCKER_BUILDKIT=1 docker build -t your_image --secret id=aws,src=$HOME/.aws/cred
 ## Example
 
 ```
-DOCKER_BUILDKIT=1 docker build -t test --secret id=awscreds2,src=$HOME/.aws/credentials .
+DOCKER_BUILDKIT=1 docker build -t test --secret id=aws,src=$HOME/.aws/credentials .
 
 [+] Building 0.6s (7/7) FINISHED
  => [internal] load build definition from Dockerfile 
